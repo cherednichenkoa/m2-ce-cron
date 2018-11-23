@@ -1,5 +1,5 @@
 {
-    "name": "magemojo/m2-ce-cron-fork-ac",
+    "name": "cherednichenkoa/m2-ce-cron",
     "description": "Replacement package for Magento 2 Cron Functionality",
     "type": "magento2-module",
     "keywords": ["magento2","cron"],
