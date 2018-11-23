@@ -7,7 +7,6 @@
   $timezone = $block->getLocalTimezone();
   date_default_timezone_set($timezone);
   $local = date("Y-m-d h:i:s A");
-  
   $timediff = (strtotime($utc) - strtotime($local));
   print 'Execution times are in '.$timezone;
   print '<br/>';
