@@ -15,5 +15,12 @@
             </argument>
         </arguments>
     </type>
+    <virtualType name="mojoCronLogger" type="Magento\Framework\Logger\Monolog">
+        <arguments>
+            <argument name="handlers"  xsi:type="array">
+                <item name="system" xsi:type="object">MageMojo\Cron\Helper\Log\Exception</item>
+            </argument>
+        </arguments>
+    </virtualType>
 </config>
 
