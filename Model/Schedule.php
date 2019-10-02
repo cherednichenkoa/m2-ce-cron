@@ -410,6 +410,7 @@ class Schedule extends \Magento\Framework\Model\AbstractModel
         while (true) {
             $this->getRuntimeParameters();
             if ($this->cronenabled == 0 || $this->isMaintenanceEnabled()) {
+                print "Stopped Service because Maintenance is Enabled\n";
                 exit;
             }
 
