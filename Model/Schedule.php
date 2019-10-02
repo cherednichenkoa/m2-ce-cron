@@ -405,11 +405,12 @@ class Schedule extends \Magento\Framework\Model\AbstractModel
         #Force UTC
         date_default_timezone_set('UTC');
 
-        print "Starting Service\n";
+        print "Starting Cron Service\n";
         #Loop until killed or heat death of the universe
         while (true) {
             $this->getRuntimeParameters();
             if ($this->cronenabled == 0 || $this->isMaintenanceEnabled()) {
+                print "Stopped Cron Service by maintenance is enabled\n";
                 exit;
             }
 
